@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>True</DelaySign>
+  </PropertyGroup>
+
+  <Import Project="../Documents.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Documents.Business.Abstractions\Documents.Business.Abstractions.csproj" />
+    <ProjectReference Include="..\DocumentsCore\Documents.Core.csproj" />
+    <ProjectReference Include="..\DocumentsRepository.Abstraction\Documents.Repository.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

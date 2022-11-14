@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../Documents.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentsCore\Documents.Core.csproj" />
+  </ItemGroup>
+
+</Project>
